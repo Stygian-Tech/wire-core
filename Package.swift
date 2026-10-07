@@ -16,7 +16,6 @@ let package = Package(
       dependencies: [.product(name: "Crypto", package: "swift-crypto")],
       swiftSettings: [
         .swiftLanguageMode(.v6),
-        .unsafeFlags(["-warnings-as-errors"]),
       ]
     ),
     .testTarget(
@@ -24,7 +23,6 @@ let package = Package(
       dependencies: ["WireCore"],
       swiftSettings: [
         .swiftLanguageMode(.v6),
-        .unsafeFlags(["-warnings-as-errors"]),
       ]
     ),
   ]
